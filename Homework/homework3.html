@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homework 3: Accessibility Testing</title>
+    </head>
+    <body>
+        <h1>Accessibility Testing on Tacoma Public Library</h1>
+        <p>Name: Nancy Dang
+            <br>
+            Class Project: Accessibility Testing
+            <br>
+            Website: <a href="https://www.tacomalibrary.org/">https://www.tacomapubliclibrary.org/</a>
+            <br>
+            Date: January 27, 2023
+        </p>
+        <p>
+            The purpose of this report is to help identify possible web digital accessibility issues in order to prevent access issues that may occur when viewing this website via assistive technologies. The following accessibility checklist is based on the "<a href="https://www.w3.org/WAI/test-evaluate/preliminary/">W3C WAI Easy Checks - A First Review of Web Accessibility</a>
+        </p>
+        <h2>Website Page Title</h2>
+        <p>
+            The title of a page is the < title > within the < head > in a web page markup. Good page titles are important for people to know where they are and to move between pages. It is the first thing that screen readers say when the user goes to a different page. 
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            Various pages on the website were evaluated for brief and adequate titles that differed from other pages on the website. The titles include 'Tacoma Public Library' after the unique title of the particular page, so users using assistive technologies still know what website they are on. 
+        </p>
+        <h2>Image Text Alternatives</h2>
+        <p>
+            Image text alternatives ('alt text') convey the purpose of an image, including pictures, illustrations, charts, etc. They are useful to people who are not able to see the image. The text should ensure that a user is provided with the same experience even without seeing the image. 
+        </p>
+        <p>
+            Results: Poor
+        </p>
+        <p>
+            While some images include alt text, most of them do not. Those that are provided are very brief and would not necessarily provide a user using assistive technologies with an adequate experience. It is recommendeded that all photos have descriptive alt text. 
+        </p>
+        <h2>Headings</h2>
+        <p>
+            Headings separate information on a web page. It is important that these headings be marked up so those who cannot use a mouse and use only the keyboard can navigate to the headings. 
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            The Movies & TV, Certification Testing, and Local History & Genealogy pages were tested. Although all headings on these pages are nested correctly, they all have more than one h1 tag. It is recommended that there be only one h1 tag on each page, since screen readers do not expect more than one. 
+        </p>
+        <h2>Contrast Ratio</h2>
+        <p>
+            Sufficient contrast between the text and background is important because some people cannot read the text otherwise. 
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            The Movies & TV, Certification Testing, and Local History & Genealogy pages were tested and they all provided high color contrast with the white backgrounds and black text. 
+        </p>
+        <h2>Resizing Text</h2>
+        <p>
+            The text on pages should be able to be resized, as some people cannot read it at certain sizes.
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            The text was resized to 200% and remained readable. It was able to be resized using keyboard commands.
+        </p>
+        <h2>Keyboard Access and Visual Focus</h2>
+        <p>
+            For those who cannot use a mouse, it is important that all interactive elements of a website are able to be accessed using a keyboard. There should also be visual keyboard focus which creates a border around or highlights each part of the page as you tab through it.
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            All parts of the home page were able to be navigated using only the keyboard, even picture slides. There was also good visual keyboard focus.
+        </p>
+        <h2>Forms, Labels, and Errors</h2>
+        <p>
+            Results: Poor
+        </p>
+        <p>
+            We tried to schedule an appointment at the Digital Media Lab using only the keyboard. None of the fields in the form were accessible with the keyboard.
+        </p>
+        <h2>Moving, Flashing, or Blinking Content</h2>
+        <p>
+            Moving, flashing, or blinking content is content that moves, flashes, or blinks on its own without the control of the user. This may affect people with ADD or visual processing disorders.
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            There is no flashing or blinking content. There are image carousels on the home page that only move as controlled by the user.
+        </p>
+        <h2>Multimedia (Video, Audio) Alternatives</h2>
+        <p>
+            Captions or text transcripts should be provided for videos and audio content for those who are deaf or hard of hearing. Visual information should come in alternative formats such as audio or text for those who are visually impaired.
+        </p>
+        <p>
+            Results: Good
+        </p>
+        <p>
+            Captions are provided for all videos, such as the tutorial videos on the eBooks & Streaming page.
+        </p>
+        <h2>Basic Structure Check</h2>
+        <p>
+            A basic structure check helps us see the web page differently without focusing on the images, styles, and layout. Not everyone sees the page with its visual elements.
+        </p>
+        <p>
+            Results: Poor
+        </p>
+        <p>
+            We used WAVE to remove all CSS styles to see the website without any visual styling. Although the home page can still be navigated without the visual elements, it relies a lot on visual information and does not provide sufficient alt text for its images.
+        </p>
+        <h2>In Summary</h2>
+        <p>
+            Thank you for taking the time to review our findings. We believe that most of the issues mentioned here can be resolved. Included below are helpful articles on web accessibility that may help you address these issues.
+        </p>
+        <h2>Related Articles:</h2>
+        <ul>
+            <li>
+                <a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">W3C Web Accessibility Initiative (WAI)</a>
+            </li>
+            <li>
+                <a href="https://www.w3.org/WAI/standards-guidelines/">W3C Accessibility Standards Overview</a>
+            </li>
+            <li>
+                <a href="https://wave.webaim.org/">WAVE Accessibility Evaluation Tool</a>
+            </li>
+            <li>
+                <a href="https://adata.org/ocr-videos">The U.S. Department of Education's Office for Civil Rights - Video Series</a>
+            </li>
+            <li>
+                <a href="https://www.w3.org/WAI/test-evaluate/">Evaluating Web Accessibility Overview</a>
+            </li>
+        </ul>
+    </body>
+</html>
