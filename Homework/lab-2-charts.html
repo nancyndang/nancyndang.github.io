@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <title>My Charts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <h1>Charts</h1>
+    <h2>Pie Chart</h2>
+    <canvas id="myChart3" style="width: 207px; max-width: 600px; display: block; height: 103px;" width="414" height="206" class="chartjs-render-monitor"></canvas>
+    <script>
+        var xValues = ["Fiction Books", "Philosophy", "Poetry", "Other",];
+        var yValues = [29, 18, 18, 22];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
+        
+        new Chart("myChart3", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "Genres of Books I Own"
+            }
+          }
+        });
+        </script>
+<h2>Bar Chart</h2>
+<canvas id="myChart4" style="width: 600px; max-width: 600px; display: block; height: 300px;" width="1200" height="600" class="chartjs-render-monitor"></canvas>
+<script>
+    var xValues = ["Radiohead", "Nick Cave & the Bad Seeds", "David Bowie", "Other Artists"];
+    var yValues = [5, 3, 4 , 6];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myChart4", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "Music I Own"
+        }
+      }
+    });
+    </script>
+</body>
